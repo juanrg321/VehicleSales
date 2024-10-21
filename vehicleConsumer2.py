@@ -20,7 +20,7 @@ consumer = KafkaConsumer(
     auto_offset_reset='earliest',
     enable_auto_commit=True
 )
-topic = 'tempdemo123'
+topic = 'avg_state_temp'
 partition = 0
 consumer.assign([TopicPartition(topic,partition)])
 # List to hold rows for Spark DataFrame
